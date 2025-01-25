@@ -36,8 +36,7 @@ contract BinarySearch {
             uint256 currentElement = _nums[middle];
             if (currentElement < value) {
                 minimum = middle + 1;
-            } 
-            else if (currentElement > value) {
+            } else if (currentElement > value) {
                 if (middle == 0) {
                     maximum = 0;
                 } else {

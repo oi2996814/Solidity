@@ -1,4 +1,3 @@
-
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
@@ -22,7 +21,7 @@ contract Exponentiation {
 
     // Defining the function to calculate the exponent
     function Expo() public view returns (uint256) {
-        uint256 answer = firstNo**secondNo;
+        uint256 answer = firstNo ** secondNo;
         return answer;
     }
 }

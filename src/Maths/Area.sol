@@ -14,12 +14,10 @@ contract Area is Test {
      * @param _side - Integer
      * @return _result - 6 * side ** 2
      */
-    function surfaceAreaCube(uint256 _side)
-        public
-        pure
-        returns (uint256 _result)
-    {
-        _result = 6 * _side**2;
+    function surfaceAreaCube(
+        uint256 _side
+    ) public pure returns (uint256 _result) {
+        _result = 6 * _side ** 2;
     }
 
     /**
@@ -28,13 +26,11 @@ contract Area is Test {
      * @param _radius - Integer
      * @return _result - 4 * pi * r^2
      */
-    function surfaceAreaSphere(uint256 _radius)
-        public
-        pure
-        returns (uint256 _result)
-    {
+    function surfaceAreaSphere(
+        uint256 _radius
+    ) public pure returns (uint256 _result) {
         uint256 PI_IN_WEI = 3141590000000000000;
-        _result = (4 * PI_IN_WEI * _radius**2) / 1e18;
+        _result = (4 * PI_IN_WEI * _radius ** 2) / 1e18;
     }
 
     /**
@@ -44,11 +40,10 @@ contract Area is Test {
      * @param  _width - Integer
      * @return _result - width * length
      */
-    function areaRectangle(uint256 _width, uint256 _length)
-        public
-        pure
-        returns (uint256 _result)
-    {
+    function areaRectangle(
+        uint256 _width,
+        uint256 _length
+    ) public pure returns (uint256 _result) {
         _result = _width * _length;
     }
 
@@ -59,7 +54,7 @@ contract Area is Test {
      * @return _result - side ** 2.
      */
     function areaSquare(uint256 _side) public pure returns (uint256 _result) {
-        _result = _side**2;
+        _result = _side ** 2;
     }
 
     /**
@@ -69,11 +64,10 @@ contract Area is Test {
      * @param _height - Integer
      * @return _result - base * height / 2.
      */
-    function areaTriangle(uint256 _base, uint256 _height)
-        public
-        pure
-        returns (uint256 _result)
-    {
+    function areaTriangle(
+        uint256 _base,
+        uint256 _height
+    ) public pure returns (uint256 _result) {
         _result = (_base * _height) / 2.0;
     }
 
@@ -84,11 +78,10 @@ contract Area is Test {
      * @param _height - Integer
      * @return _result - base * height
      */
-    function areaParallelogram(uint256 _base, uint256 _height)
-        public
-        pure
-        returns (uint256 _result)
-    {
+    function areaParallelogram(
+        uint256 _base,
+        uint256 _height
+    ) public pure returns (uint256 _result) {
         _result = _base * _height;
     }
 
@@ -117,7 +110,7 @@ contract Area is Test {
      */
     function areaCircle(uint256 _radius) public pure returns (uint256 _result) {
         uint256 PI_IN_WEI = 3141590000000000000;
-        _result = (PI_IN_WEI * _radius**2) / 1e18;
+        _result = (PI_IN_WEI * _radius ** 2) / 1e18;
     }
 
     /**
@@ -127,11 +120,10 @@ contract Area is Test {
      * @param _diagonal2 - Integer
      * @return _result - (1 / 2) * diagonal1 * diagonal2
      */
-    function areaRhombus(uint256 _diagonal1, uint256 _diagonal2)
-        public
-        pure
-        returns (uint256 _result)
-    {
+    function areaRhombus(
+        uint256 _diagonal1,
+        uint256 _diagonal2
+    ) public pure returns (uint256 _result) {
         uint256 HALF_IN_WEI = 500000000000000000;
         _result = (HALF_IN_WEI * _diagonal1 * _diagonal2) / 1e18;
     }

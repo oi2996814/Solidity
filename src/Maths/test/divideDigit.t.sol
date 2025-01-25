@@ -23,7 +23,7 @@ contract DivideDigitTest is Test {
 
     function test_Divide() external {
         int128 result = dd.Divide();
-        int128 expected = 2/2;
+        int128 expected = 2 / 2;
         assertEq(expected, result);
     }
 }

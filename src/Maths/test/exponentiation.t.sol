@@ -23,7 +23,7 @@ contract ExponentiationTest is Test {
 
     function test_GetModulo() external {
         uint256 result = exponentiation.Expo();
-        uint256 expected = 2**2;
+        uint256 expected = 2 ** 2;
         assertEq(expected, result);
     }
 }

@@ -18,7 +18,7 @@ contract BinarySearchTest is Test {
         bs.setValue(key);
         bs.setArray(arr);
     }
-    
+
     /// @dev Test `BinarySearch`
 
     function test_BinarySearch() external {

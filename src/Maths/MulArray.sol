@@ -13,11 +13,9 @@ contract MulArray {
      * @param _arr array of numbers
      * @return product which is the cumultative product of the array.
      */
-    function mulArr(uint256[] memory _arr)
-        public
-        pure
-        returns (uint256 product)
-    {
+    function mulArr(
+        uint256[] memory _arr
+    ) public pure returns (uint256 product) {
         /// @dev Initialize the total we need to return to 0.
         uint256 _product = 1;
 

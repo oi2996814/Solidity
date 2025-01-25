@@ -8,11 +8,9 @@ pragma solidity ^0.8.0;
  */
 contract AverageMean {
     /// find the mean value of an array of numbers
-    function getAverageMean(uint256[] memory _nums)
-        public
-        pure
-        returns (uint256 result)
-    {
+    function getAverageMean(
+        uint256[] memory _nums
+    ) public pure returns (uint256 result) {
         uint256 sum;
         for (uint256 i = 0; i < _nums.length; i++) {
             sum += _nums[i];

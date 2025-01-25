@@ -45,18 +45,18 @@ Clone the current project and enter the directory.
 Installing `forge-std` (Forge Standard Library).
 
 ```bash
-  forge install foundry-rs/forge-std 
+  forge install foundry-rs/forge-std
 ```
 
 Build the project using `forge-std`.
 
-```bash 
+```bash
   forge build
 ```
 
 Run `forge-std` automatic tests.
 
-```bash 
+```bash
   # forge test --match-contract <contract-name>Test
   forge test --match-contract AbsTest
 ```

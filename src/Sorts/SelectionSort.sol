@@ -11,11 +11,9 @@ pragma solidity ^0.8.0;
  * the smaller values into sorted position one at a time.
  */
 contract SelectionSort {
-    function selectionSort(uint256[] memory _nums)
-        public
-        pure
-        returns (uint256[] memory sortedArray)
-    {
+    function selectionSort(
+        uint256[] memory _nums
+    ) public pure returns (uint256[] memory sortedArray) {
         for (uint256 i = 0; i < _nums.length; i++) {
             uint256 lowest = i;
             for (uint256 j = i + 1; j < _nums.length; j++) {

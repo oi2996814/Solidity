@@ -20,7 +20,7 @@ contract LinearSearchTest is Test {
     /// @dev Test `LinearSearch`
 
     function test_LinearSearch() public {
-        int searchedIndex = ls.search(arr,key);
+        int searchedIndex = ls.search(arr, key);
         int expectedIndex = 6;
         assertEq(expectedIndex, searchedIndex);
     }

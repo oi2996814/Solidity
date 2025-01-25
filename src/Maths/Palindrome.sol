@@ -17,7 +17,7 @@ contract PalindromeChecker {
                 return false;
             }
         }
-        
+
         // If the loop completes without finding mismatches, return true (a palindrome)
         return true;
     }

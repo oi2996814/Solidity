@@ -18,11 +18,9 @@ contract InsertionSort {
      @return output The resulting sorted array in increasing order
      */
 
-    function sort(uint256[] memory myArray)
-        public
-        pure
-        returns (uint256[] memory)
-    {
+    function sort(
+        uint256[] memory myArray
+    ) public pure returns (uint256[] memory) {
         uint256 n = myArray.length;
         for (uint256 i = 1; i < n; i++) {
             uint256 key = myArray[i];

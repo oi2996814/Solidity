@@ -35,11 +35,9 @@ contract ReverseArray {
      * @param _array => array of numbers
      * @return _array => reversed array using the _reverseArray internal function.
      */
-    function reverse(uint256[] memory _array)
-        external
-        pure
-        returns (uint256[] memory)
-    {
+    function reverse(
+        uint256[] memory _array
+    ) external pure returns (uint256[] memory) {
         uint256 end = (_array.length) - 1;
         return _reverseArray(_array, 0, end);
     }

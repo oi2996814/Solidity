@@ -12,11 +12,9 @@ contract LucasSeries {
      * @dev This method use a lot of gas to run. Recursive methods are not good ideas.
      * For instance with RemixIDE, its hard to go further 10th term.
      */
-    function lucasRecursiveTerm(uint256 _n)
-        public
-        pure
-        returns (uint256 result)
-    {
+    function lucasRecursiveTerm(
+        uint256 _n
+    ) public pure returns (uint256 result) {
         if (_n == 0) {
             result = 2;
         } else if (_n == 1) {

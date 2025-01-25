@@ -15,11 +15,9 @@ contract MergeSort {
     /// @notice Sorts the given array in increasing order.
     /// @param input The array to sort.
     /// @return output The resulting sorted array in increasing order.
-    function sort(uint256[] calldata input)
-        public
-        pure
-        returns (uint256[] memory)
-    {
+    function sort(
+        uint256[] calldata input
+    ) public pure returns (uint256[] memory) {
         uint256 length = input.length;
 
         // If the current array has 1 or 0 elements it is already sorted.
@@ -40,11 +38,10 @@ contract MergeSort {
     /// @param first The first array to be used to build the result.
     /// @param second The second array to be used to build the result.
     /// @return output The sorted array built using the inputs.
-    function merge(uint256[] memory first, uint256[] memory second)
-        internal
-        pure
-        returns (uint256[] memory)
-    {
+    function merge(
+        uint256[] memory first,
+        uint256[] memory second
+    ) internal pure returns (uint256[] memory) {
         uint256 idx = 0;
         uint256 idx1 = 0;
         uint256 idx2 = 0;

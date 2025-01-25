@@ -13,15 +13,16 @@ contract BinaryExponentiationTest is Test {
         binaryExponentiation = new BinaryExponentiation();
     }
 
-    function testCalculatesBaseToThePowerOfExp(uint256 base, uint256 exp)
-        public
-    {
+    function testCalculatesBaseToThePowerOfExp(
+        uint256 base,
+        uint256 exp
+    ) public {
         // Arrange
         vm.assume(base != 0 && exp != 0);
         // keep the base and exponent low not to cause an overflow.
         vm.assume(base < 250 && exp < 32);
 
-        uint256 expectedRes = base**exp;
+        uint256 expectedRes = base ** exp;
 
         // Act
         uint256 res = binaryExponentiation.pow(base, exp);

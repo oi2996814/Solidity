@@ -35,7 +35,7 @@ contract ArmstrongNumber {
 
         while (saveNum > 0) {
             rightNum = saveNum % 10;
-            sum += rightNum**digits;
+            sum += rightNum ** digits;
             saveNum /= 10;
         }
 

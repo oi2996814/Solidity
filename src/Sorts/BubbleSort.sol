@@ -7,11 +7,9 @@ pragma solidity ^0.8.0;
  * @dev https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-negative-number-topic/cc-6th-absolute-value/v/absolute-value-of-integers
  */
 contract BubbleSort {
-    function bubbleSort(uint256[] memory _arr)
-        public
-        pure
-        returns (uint256[] memory sortedArr_)
-    {
+    function bubbleSort(
+        uint256[] memory _arr
+    ) public pure returns (uint256[] memory sortedArr_) {
         uint256 length = _arr.length;
         bool noSwaps;
 
